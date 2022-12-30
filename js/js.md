@@ -50,3 +50,10 @@ El.addEventListener('blur', function(){
 ### css
 - [X] 가상클래스 선택자 `:hover`
 - [X] `transition`과 `transform` 활용
+
+<br/>
+
+## mouseover
+
+### css
+- [X] 가상클래스 선택자 `:hover`과 `transition`, 가상 요소 선택자 `::after`
