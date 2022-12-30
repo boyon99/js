@@ -41,3 +41,12 @@ El.addEventListener('blur', function(){
 
 ### css
 - [X] 가상클래스 선택자 `:hover`을 이용한 display 활용
+
+
+<br/>
+
+## rotation
+
+### css
+- [X] 가상클래스 선택자 `:hover`
+- [X] `transition`과 `transform` 활용

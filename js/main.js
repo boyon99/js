@@ -15,3 +15,5 @@ searchInputEl.addEventListener('blur', function(){
   searchEl.classList.remove('focused');
   searchInputEl.setAttribute('placeholder', '');
 });
+
+

@@ -16,6 +16,12 @@ p{
   left: 200px;
 }
 
+.p-rotation{
+  position: absolute;
+  top: 150px;
+  left: 30px;
+}
+
 /* search */
 .search{
   height: 34px;
@@ -60,7 +66,7 @@ p{
 }
 
 /* menu-bar */
-.inner{
+.menu-bar{
   height: 80px;
   width: 200px;
 }
@@ -99,3 +105,19 @@ p{
   width: 400px;
   padding: 10px;
 }
+
+
+/* rotation */
+
+.medal .front,
+.medal .back {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  transition: 1s;
+  backface-visibility: hidden;
+}
+.medal .front { transform: rotateY(0deg);}
+.medal:hover .front { transform: rotateY(180deg);}
+.medal .back { transform: rotateY(-180deg);}
+.medal:hover .back { transform: rotateY(0deg);}
