@@ -10,8 +10,22 @@
 - [X] `transition : width .4s;`
 
 ### js
-- [X] `querySelector`
-- [X] `addEventListener('click', function(){});` : `focus()`
-- [X] `addEventListener('focus', function(){});` : `classList.add()`
-- [X] `addEventListener('blur', function(){});` : `classList.remove()`
+- [X] addEventListener : `click` `focus` `blur`
+- [X] classList : `add()` `remove()` 
+```javascript
+El.addEventListener('click', function(){
+  El.focus(); 
+});
+```
 
+```javascript
+El.addEventListener('focus', function(){
+  El.classList.add('focused');
+});
+```
+
+```javascript
+El.addEventListener('blur', function(){
+  El.classList.remove('focused');
+});
+```
