@@ -1,0 +1,56 @@
+/*p*/
+p{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.p-search{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+
+
+/* search */
+.search{
+  height: 34px;
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  display: flex;
+}
+
+.search input{
+  width: 36px;
+  height: inherit;
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  background-color: #fff;
+  color: #777;
+  font-size: 12px;
+  transition: width .4s;
+}
+
+.search input:focus{
+  width: 190px;
+  border-color: #669900;
+}
+
+.search i{
+  position: absolute;
+  height: 20px;
+  font-size: 18px;
+  right: 8px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transition: .4s;
+}
+
+.search.focused i{
+  opacity: 0;
+}
