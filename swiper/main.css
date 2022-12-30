@@ -1,0 +1,44 @@
+/* p */
+p{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+/* notice */
+.notice-line{
+  position: relative;
+  overflow: hidden;
+}
+
+.notice-line .inner{
+  height: 62px;
+  z-index: 1;
+  display: flex;
+  width: 60%;
+  background-color: #333;
+  align-items: center;
+}
+
+.notice-line .inner h2{
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.notice-line .inner .swiper-container{
+  height: 62px;
+  flex-grow: 1;
+}
+
+.notice-line .inner .swiper-slide{
+  height: 62px;
+  display: flex;
+  align-items: center;
+}
+
+.notice-line .inner .swiper-slide a{
+  color: #fff;
+  text-decoration: none;
+}
