@@ -1,5 +1,17 @@
-/* p */
+body{
+  display: flex;
+}
+
+section{
+    width: 48%;
+    margin: 1%;
+    height: 450px;
+    background-color: rgb(236, 230, 230);
+    border-radius: 5%;
+  }
+  
 p{
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 700;
+  margin: 10px;
 }
