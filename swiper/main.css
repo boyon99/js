@@ -1,9 +1,20 @@
-/* p */
-p{
-  font-size: 20px;
-  font-weight: 700;
+body{
+  display: flex;
 }
 
+section{
+    width: 48%;
+    margin: 1%;
+    height: 250px;
+    background-color: rgb(236, 230, 230);
+    border-radius: 5%;
+  }
+  
+p{
+  font-size: 30px;
+  font-weight: 700;
+  margin: 10px;
+}
 
 /* notice */
 .notice-line{
@@ -15,7 +26,8 @@ p{
   height: 62px;
   z-index: 1;
   display: flex;
-  width: 60%;
+  width: 98%;
+  margin: 1% auto;
   background-color: #333;
   align-items: center;
 }
