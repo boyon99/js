@@ -6,8 +6,8 @@
 - [X] scrollmagic cdn
 
 ### css
-- [X] `background-attachment: fixed;`
-- [X] `transition`과 `transform`
+- [X] `background-attachment: fixed;`을 이용하여 배경 고정
+- [X] `transition`과 `transform`을 이용하여 글자 애니메이션 구현
 
 ### js
 - [X] foreach

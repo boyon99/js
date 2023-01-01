@@ -15,15 +15,21 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./main.css">
   <!--js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
   <script defer type="text/javascript" src="./main.js"></script>
   <title>frontend</title>
 </head>
 
-<body>
-    <!--scroll (0,0)-->
-    <section>
-      <p class="p-scroll">스크롤</p>
-      <a href="./scroll/main.html">스크롤 (특정 화면 도달 시 글자 나타나는 애니메이션)</a>
-    </section>
+<body style="height: 1200px;">
+  <!--scroll-->
+  <p class="p-scroll">scroll</p>
+  <section class="scroll scroll-1 scroll-spy">
+    <div class="description back-to-position to-right delay-1">delay-1</div> 
+    <div class="more back-to-position to-right delay-2">delay-2</div>
+  </section>
+  <section class="scroll scroll-2 scroll-spy">
+    <div class="description back-to-position to-right delay-1">delay-1</div> 
+    <div class="more back-to-position to-right delay-2">delay-2</div>
+  </section>
 </body>
 </html>
