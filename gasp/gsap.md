@@ -2,7 +2,6 @@
 
 ### html head
 - [X] reset.css cdn
-- [X] fontawesome icon
 - [X] favicon.png
 - [X] gasp cdn
 
