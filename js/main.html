@@ -22,20 +22,21 @@
   <title>frontend</title>
 </head>
 
-<body style="height: 2000px;">
+<body style="height: 2000px; width: 1000px;">
   <!--a-->
   <div class="a">
-    <a href="./etc/gallery/gallery.html">갤러리 이동</a>
+    <a href="./etc/gallery/gallery.html">갤러리 (사진 확대 및 사진 이동)</a>
   </div>
-
   <!--search-->
-  <div class="search">
+  <section class="search">
+    <p class="">search</p>
     <input type="text" />
     <i class="fa-solid fa-magnifying-glass"></i>
-  </div>
+  </section>
 
   <!--menu-bar-->
-  <div class="menu-bar">
+  <section class="menu-bar">
+    <p class="">menu-bar</p>
     <ul class="main-menu">
       <li class="item">
         <div class="item__name">ONE</div>
@@ -48,26 +49,81 @@
         </div>
       </li>
     </ul>
-  </div>
+  </section>
 
   <!--rotation-->
-  <div class="medal">
+  <section class="medal">
+    <p class="">medal</p>
     <div class="front"></div>
     <div class="back"></div>
-  </div>
+  </section>
 
   <!--mouseover-->
-  <div class="gallerylist">
+  <section class="mouseover">
+    <p class="">mouseover</p>
     <div class="screen">
       <div class="top">위의화면</div>
       <div class="bottom">마우스효과 : 아래 화면</div>
-      <img src="../favicon.png" style="width: 240px; height: auto;" />
+      <img src="../favicon.png" style="width: 180px; height: auto;" />
     </div>
-    <div>
-      <h3>이미지 위에 오브젝트가 나타나는 효과</h3>
-    </div>
-  </div>
+  </section>
 
+  <!--slides-->
+  <section class="slides">
+    <p class="">slide</p>
+    <div class="slide">
+      <input type="radio" name="slide" id="slide01" checked>
+      <input type="radio" name="slide" id="slide02">
+      <input type="radio" name="slide" id="slide03">
+
+      <div class="slidewrap">
+        <ul class="slidelist">
+          <li>
+            <a>
+              <label for="slide03" class="left"></label>
+              <img src="./img/slide01.jpg">
+              <label for="slide02" class="right"></label>
+            </a>
+          </li>
+          <li>
+            <a>
+              <label for="slide01" class="left"></label>
+              <img src="./img/slide02.jpg">
+              <label for="slide03" class="right"></label>
+            </a>
+          </li>
+          <li>
+            <a>
+              <label for="slide02" class="left"></label>
+              <img src="./img/slide03.jpg">
+              <label for="slide01" class="right"></label>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!--border-hover-->
+  <section class="border-hover">
+    <p class="">border-hover</p>
+
+    <div class="banner">
+      <img src="./img/slide01.jpg" alt="">
+    </div>
+  </section>
+
+  <!--modal-->
+  <section class="modal">
+    <input type="checkbox" id="popup">
+    <label for="popup">View</label>
+    <div>
+      <div>
+        <label for="popup"></label>
+      </div>
+      <label for="popup"></label>
+    </div>
+  </section>
 </body>
 
 </html>
