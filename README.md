@@ -21,7 +21,7 @@
 ```
 
 
-#### font awesome
+#### Font awesome
 [Font Awesome](https://fontawesome.com/)에서 아이콘을 사용할 수 있다.
 ```html
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -29,9 +29,19 @@
 
 <br/>
 
+## css
+
+#### Gradient
+원하는 [gradient](https://cssgradient.io/)을 입력하연 해당 코드를 제공한다.
+
+#### Bootstrap
+[bootstrap](https://getbootstrap.com/)는 웹사이트를 쉽게 만들 수 있게 도와주는 CSS, JS 프레임워크
+
+<br>
+
 ## js
 
-#### gsap 
+#### Gsap 
 [GSAP(The GreenSock Animation Platform)](https://greensock.com/gsap/)은 자바스크립트로 제어하는 타임라인 기반의 애니메이션 라이브러리이다.
 
 ```html
@@ -46,7 +56,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 ```
 
-#### swiper
+#### Swiper
 [Swiper](https://swiperjs.com/)는 하드웨어 가속 전환과 여러 기본 동작을 갖춘 현대적인 슬라이드 라이브러리이다. [Swiper API](https://swiperjs.com/swiper-api)를 확인할 수 있다.
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
