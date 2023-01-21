@@ -27,6 +27,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 ```
 
+
+#### ICONS8
+아이콘 및 음악을 [icons8](https://icons8.kr/)에서 제공되는 HTML을 통해 사용할 수 있다. 
+
 <br/>
 
 ## css
