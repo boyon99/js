@@ -75,6 +75,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
 ```
 
+<br/>
+
+#### JQuery
+
+[Jquery](https://releases.jquery.com/)는 HTML의 클라이언트 사이드 조작을 단순화 하도록 설계된 크로스 플랫폼의 자바스크립트 라이브러리다. [api](https://api.jquery.com/)에서 더 자세한 사항을 확인할 수 있다.
+
+```html
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+```
 
 
 
