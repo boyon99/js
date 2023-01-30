@@ -1,3 +1,11 @@
+## Start
+- [ ] `npm -i`
+- [ ] `npm install -D parcel-bundler`
+- [ ] `reset.css` 또는 `normailze.css`
+- [ ] `favicon.ico`
+- [ ] `.gitignore`
+<br/>
+
 ## html
 #### Open Graph protocol
 웹페이지가 공유될 때 활용되는 정보 지정 [속성 보기](https://ogp.me/)
