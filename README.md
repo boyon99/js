@@ -54,7 +54,7 @@
 
 #### Lodash
 
-[Lodash](https://lodash.com/)는 다양한 유틸리티 기능을 제공하는 자바스크립트 라이브러리이며 [Lodash API](https://lodash.com/docs/4.17.15)에서 더 많은 정보를 확인할 수 있다.
+[Lodash](https://lodash.com/)는 다양한 유틸리티 기능을 제공하는 자바스크립트 라이브러리로 array, object, 문자, 숫자 자료를 다루기 편하게 해주는 기본함수들을 제공한다. [Lodash API](https://lodash.com/docs/4.17.15)에서 더 많은 정보를 확인할 수 있다.
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -75,6 +75,17 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
 ```
 
+#### Animate On Scroll
+
+[AOS](https://github.com/michalsnik/aos)는 스크롤 이벤트 시 나타나는 애니메이션을 만들 때 사용하는 라이브러리로 [aos site](https://michalsnik.github.io/aos/)에서 더 자세한 사항을 확인할 수 있다.
+
+```html
+<!--css, js cdn 파일 삽입 후 -->
+<script>
+  AOS.init();
+</script>
+```
+
 #### JQuery
 
 [Jquery](https://releases.jquery.com/)는 HTML의 클라이언트 사이드 조작을 단순화 하도록 설계된 크로스 플랫폼의 자바스크립트 라이브러리다. [api](https://api.jquery.com/)에서 더 자세한 사항을 확인할 수 있다.
@@ -83,7 +94,13 @@
 <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 ```
 
+#### Chart.js
 
+[chart.js](https://cdnjs.com/libraries/Chart.js)는 차트를 만들 수 있는 라이브러리이다. [chart](https://www.chartjs.org/docs/latest/)에서 더 자세한 사항을 확인할 수 있다.
+
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.0/chart.min.js"></script>
+```
 
 <br/>
 
