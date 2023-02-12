@@ -1,0 +1,11 @@
+## 
+
+### html head
+- [X] reset.css cdn
+- [X] favicon.png
+
+### css
+
+
+### js
+
