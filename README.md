@@ -50,7 +50,7 @@
 [bootstrap](https://getbootstrap.com/)는 웹사이트를 쉽게 만들 수 있게 도와주는 CSS, JS 프레임워크
 
 #### svgbackgrounds
-[svgbackgrounds](https://www.svgbackgrounds.com/)는 웹사이트의 배경을 제공해주는 사이트이다.
+[svgbackgrounds](https://www.svgbackgrounds.com/)는 웹사이트의 배경을 제공해주는 사이트이다. [그 외 사이트](https://dev.to/kiranrajvjd/the-ultimate-css-background-pattern-resource-20m8)를 참고할 수 있다.
 
 <br>
 
