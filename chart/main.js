@@ -2,7 +2,7 @@ function getRandom() {
   return Math.floor(10 + Math.random() * 90);
 }
 // line chart data
-var buyerData = {
+let buyerData = {
   labels: ["January", "February", "March", "April", "May", "June"],
   datasets: [
     {
@@ -15,11 +15,11 @@ var buyerData = {
   ]
 }
 // get line chart canvas
-var buyers = document.getElementById('buyers').getContext('2d');
+let buyers = document.getElementById('buyers').getContext('2d');
 // draw line chart
 new Chart(buyers).Line(buyerData);
 // pie chart data
-var pieData = [
+let pieData = [
   {
     value: getRandom(),
     color: "#878BB6"
@@ -38,16 +38,16 @@ var pieData = [
   }
 ];
 // pie chart options
-var pieOptions = {
+let pieOptions = {
   segmentShowStroke: false,
   animateScale: true
 }
 // get pie chart canvas
-var countries = document.getElementById("countries").getContext("2d");
+let countries = document.getElementById("countries").getContext("2d");
 // draw pie chart
 new Chart(countries).Pie(pieData, pieOptions);
 // bar chart data
-var barData = {
+let barData = {
   labels: ["January", "February", "March", "April", "May", "June"],
   datasets: [
     {
@@ -63,6 +63,6 @@ var barData = {
   ]
 }
 // get bar chart canvas
-var income = document.getElementById("income").getContext("2d");
+let income = document.getElementById("income").getContext("2d");
 // draw bar chart
 new Chart(income).Bar(barData);
