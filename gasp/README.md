@@ -1,27 +1,10 @@
-## fade-in
-
-### html head
-- [X] reset.css cdn
-- [X] favicon.png
-- [X] gasp cdn
+## [gsap.js](https://greensock.com/gsap/)
 
 ### js
-- [X] forEach 
-- [X] gsap
-```javascript
-  gsap.to(요소, 시간, {
-    delay: .7,
-    opacity: 1
-  });
-```
-<br/>
 
-## floating
-
-### js
-- [X] random() 
-- [X] gsap
 ```javascript
-  gsap.to(요소, 시간, {
-  });
+gsap.to(요소, 시간, {
+  delay: 0.7,
+  opacity: 1,
+});
 ```

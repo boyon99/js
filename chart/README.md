@@ -1,11 +1,3 @@
-## 
+## [Chart.js](https://www.chartjs.org/)
 
-### html head
-- [X] reset.css cdn
-- [X] favicon.png
-
-### css
-
-
-### js
 
