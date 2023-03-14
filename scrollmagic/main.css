@@ -1,22 +1,20 @@
-body{
+body {
   display: flex;
 }
 
-section{
-    width: 48%;
-    margin: 1%;
-    height: 150px;
-    background-color: rgb(236, 230, 230);
-    border-radius: 5%;
-  }
-  
-p{
+section {
+  width: 48%;
+  margin: 1%;
+  height: 150px;
+}
+
+p {
   font-size: 30px;
   font-weight: 700;
   margin: 10px;
 }
 
-a{
+a {
   text-decoration: none;
   margin: 10px;
 }
