@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  width: 48%;
+  margin: 1%;
+}
+
+.time__p {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 10px;
+  width: 100%;
+}
+
+.time {
+  width: 500px;
+  height: 300px;
+  margin-left: 10px;
+  font-size: 20px;
+}
