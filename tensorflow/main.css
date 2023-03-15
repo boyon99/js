@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  width: 98%;
+  margin: 1%;
+  height: auto;
+  border-radius: 5%;
+}
+
+p {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 10px;
+}
+
+img {
+  margin-left: 10px;
+}

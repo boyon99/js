@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--favicon-->
+  <link rel="icon" href="../favicon.png" />
+
+  <!--css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./main.css" />
+  <!--js-->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+  <script defer type="text/javascript" src="./main.js"></script>
+  <title>frontend</title>
+</head>
+
+<body>
+  <section>
+    <p class="">이미 제공되는 동물 모델을 통해 이미지 분석</p>
+    <!-- Load TensorFlow.js. This is required to use MobileNet. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.1"> </script>
+    <!-- Load the MobileNet model. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0"> </script>
+
+    <!-- Replace this with your image. Make sure CORS settings allow reading the image! -->
+    <img id="img" src="./img/dog.jpeg"></img>
+
+    <!-- Place your code in the script tag below. You can also use an external .js file -->
+    <script>
+      // Notice there is no 'import' statement. 'mobilenet' and 'tf' is
+      // available on the index-page because of the script tag above.
+
+      const img = document.getElementById('img');
+
+      // Load the model.
+      mobilenet.load().then(model => {
+        // Classify the image.
+        model.classify(img).then(predictions => {
+          console.log('Predictions: ');
+          console.log(predictions);
+        });
+      });
+    </script>
+  </section>
+
+  <section>
+    <p class="">나의 모델 만들기</p>
+
+    <script>
+      // 1. 과거의 데이터를 준비한다.
+      let 온도 = [20, 21, 22, 23];
+      let 판매량 = [40, 42, 44, 46];
+      let 원인 = tf.tensor(온도);
+      let 결과 = tf.tensor(판매량);
+      // console에 원인.print() 입력 시 변환된 원인 값이 출력된다.
+
+      // 2. 모델의 모양을 만든다.
+      let X = tf.input({ shape: [1] }); // 단 하나의 값만 들어간다.
+      let Y = tf.layers.dense({ units: 1 }).apply(X); // 한개의 값이 출력된다.
+      let model = tf.model({ inputs: X, outputs: Y }); // 모델을 정의한다.
+      let compileParam = { optimizer: tf.train.adam(), loss: tf.losses.meanSquaredError }
+      model.compile(compileParam);
+
+      // 3. 데이터로 모델을 학습시킨다. 
+      // let fitParam = { epochs: 100 } // 반복횟수, 값이 높을수록 정확해진다.
+      let fitParam = {
+        epochs: 10,
+        callbacks: {
+          onEpochEnd: function (epoch, logs) {
+            console.log('epoch', epoch, logs, 'RMSE=>', Math.sqrt(logs.loss)); // loss값이 0에 가까울 수록 잘 학습된 것이다.
+          }
+        }
+      } // 실시간으로 진행과정을 확인할 수 있다.
+      model.fit(원인, 결과, fitParam).then(function (result) {
+
+        // 4. 모델을 이용합니다. 
+        // 4.1 기존의 데이터를 이용
+        let 예측한결과 = model.predict(원인);
+        console.log("예측한 결과")
+        예측한결과.print()
+        // await model.save('downloads://my-model'); // 파일 다운로드
+        // await model.save('localstorage://my-model'); // 로컬 저장소에 저장
+        // const model = await tf.loadLayersModel('localstorage://my-model'); // 로컬 저장소에서 로드
+      });
+
+      // 4.2 새로운 데이터를 이용
+      let 다음주온도 = [15, 16, 17, 18, 19]
+      let 다음주원인 = tf.tensor(다음주온도);
+      let 다음주결과 = model.predict(다음주원인);
+      console.log("다음주 결과")
+      다음주결과.print();
+      // model.predict(tf.tensor([15,16,17])).print()를 콘솔에 입력시 해당 결과를 추출
+      // model.predict(tf.tensor([15,16,17])).arraySync()[0][0]를 콘솔에 입력시 구체적인 결과 추출
+      // predict()는 weight*값 + bias를 계산한 값이다.
+    </script>
+  </section>
+</body>
+
+</html>

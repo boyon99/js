@@ -156,6 +156,18 @@ npm i --save lodash
 npm i moment
 ```
 
+#### TensorFlow.js
+
+[TensorFlow.js](https://www.tensorflow.org/js?hl=ko)는 자바스크립트 머신러닝 라이브러리이다.
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+```
+
+```console
+npm install @tensorflow/tfjs
+```
+
 <br/>
 
 ## reference
