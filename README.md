@@ -91,6 +91,10 @@
 ></script>
 ```
 
+```console
+npm i --save lodash
+```
+
 #### Swiper
 
 [Swiper](https://swiperjs.com/)는 하드웨어 가속 전환과 여러 기본 동작을 갖춘 현대적인 슬라이드 라이브러리이다. [Swiper API](https://swiperjs.com/swiper-api)를 확인할 수 있다.
