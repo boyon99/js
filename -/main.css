@@ -6,7 +6,7 @@ section {
   width: 48%;
   margin: 1%;
   height: 450px;
-  background-color: rgb(236, 230, 230);
+  border: 2px solid #000;
   border-radius: 5%;
 }
 
@@ -15,5 +15,3 @@ p {
   font-weight: 700;
   margin: 10px;
 }
-
-
