@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--favicon-->
+  <link rel="icon" href="../favicon.png" />
+
+  <!--css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./main.css" />
+  <!--js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+  <script defer type="text/javascript" src="./main.js"></script>
+  <title>frontend</title>
+</head>
+
+<body>
+  <p class="">내용</p>
+
+  <script>
+    // 준비 함수
+    function setup() {
+      let cav = createCanvas(300, 300);
+      // 위치 지정
+      cav.position(10, 60)
+      background(220)
+      // 애니메이션 구현을 위한 함수 (1-1)
+      // x = 0;
+      /** 
+       * 색상을 채운후 도형을 그려야 한다.
+       * fill('#b7e92d')
+       * stroke('green')
+       * strokeWeight(10)
+       * rect(30, 70, 55, 55, 20)
+      */
+    }
+    // 반복 함수 
+    function draw() {
+      // 원이 가로로 지나가는 애니메이션이다. (1-1)
+      // background(220);
+      // x = x + 10;
+      // circle(x, 200, 100)
+
+      // 마우스에 따라 선이 그려짐
+      line(pmouseX, pmouseY, mouseX, mouseY)
+    }
+
+    // 버튼 클릭 때마다 색상이 변경되는 함수
+    function mousePressed() {
+      background(random(250), random(255), random(255))
+    }
+  </script>
+
+</body>
+
+</html>

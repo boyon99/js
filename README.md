@@ -168,6 +168,14 @@ npm i moment
 npm install @tensorflow/tfjs
 ```
 
+#### p5.js
+
+[p5.js](https://p5js.org/ko/)는 크리에이티브 코딩을 위한 자바스크립트 라이브러리로, 예술가, 디자이너, 교육자, 입문자, 그리고 모두에게 접근성 높고 포용적인 언어를 지향한다.
+
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+```
+
 <br/>
 
 ## reference
