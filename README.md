@@ -1,10 +1,3 @@
-## 라이브러리를 선택하는 방법
-
-- [cdnjs](https://cdnjs.com/)
-- [npm trends](https://npmtrends.com/)
-- [wappalyzer](https://www.wappalyzer.com/?utm_source=popup&utm_medium=extension&utm_campaign=wappalyzer)
-- [npm](https://www.npmjs.com/)
-
 ## html
 
 #### Open Graph protocol
@@ -62,7 +55,7 @@
 
 #### Bootstrap
 
-[bootstrap](https://getbootstrap.com/)는 웹사이트를 쉽게 만들 수 있게 도와주는 CSS, JS 프레임워크
+[bootstrap](https://getbootstrap.com/)는 웹사이트를 쉽게 만들 수 있게 도와주는 CSS, JS 프레임워크이다.
 
 #### svgbackgrounds
 
